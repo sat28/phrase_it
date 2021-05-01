@@ -8,8 +8,8 @@ This dash application used word2vec library and phrases.csv provided inside data
 Hosted version - 
 
 S3 location for vectors data -
-  https://phrase-it.s3.amazonaws.com/vectors.pickle
-  https://phrase-it.s3.amazonaws.com/vectors.pickle.vectors.npy
+- https://phrase-it.s3.amazonaws.com/vectors.pickle
+- https://phrase-it.s3.amazonaws.com/vectors.pickle.vectors.npy
 
 #### Artifacts
 Contains the notebook initially used
