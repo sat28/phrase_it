@@ -11,3 +11,6 @@ All data being used by the app resides here
 
 #### phrase_interface
 This python package holds the class Phrase and other functions 
+
+#### main.py
+This is the entry point of the dash application
