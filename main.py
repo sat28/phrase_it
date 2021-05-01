@@ -60,4 +60,4 @@ def update_output_div(click, input_value):
 
 if __name__ == '__main__':
     print(phrase.similar_phrase('acquisitions in 2020'))
-    app.run_server()
+    app.run_server(host='0.0.0.0')

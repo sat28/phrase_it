@@ -16,10 +16,11 @@ COPY ./ ./
 RUN wget -O data/vectors.pickle.vectors.npy https://phrase-it.s3.amazonaws.com/vectors.pickle.vectors.npy && \
     wget -O data/vectors.pickle https://phrase-it.s3.amazonaws.com/vectors.pickle
 
-EXPOSE 6007
+EXPOSE 8050
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 
-CMD ["gunicorn"  , "-k", "geventwebsocket.gunicorn.workers.GeventWebSocketWorker", "-w", "1", "-b", "0.0.0.0:6007", "main"]
+#CMD ["gunicorn"  , "-k", "geventwebsocket.gunicorn.workers.GeventWebSocketWorker", "-w", "1", "-b", "0.0.0.0:6007", "main"]
+CMD ["python", "main.py"]
