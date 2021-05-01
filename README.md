@@ -3,6 +3,14 @@
 #### Summary
 This dash application used word2vec library and phrases.csv provided inside data to find similiar phrases and to calculate cosine similarity
 
+#### Important Links
+
+Hosted version - 
+
+S3 location for vectors data -
+  https://phrase-it.s3.amazonaws.com/vectors.pickle
+  https://phrase-it.s3.amazonaws.com/vectors.pickle.vectors.npy
+
 #### Artifacts
 Contains the notebook initially used
 
@@ -14,3 +22,6 @@ This python package holds the class Phrase and other functions
 
 #### main.py
 This is the entry point of the dash application
+
+#### Dockerfile
+Docker image built using this file on the hosted VM
