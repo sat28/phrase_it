@@ -9,9 +9,14 @@ WORKDIR /app
 COPY requirements.txt /
 RUN pip install --trusted-host pypi.python.org -r /requirements.txt
 
+RUN pip install gevent-websocket
 
 COPY ./ ./
-EXPOSE 8050
+
+RUN wget -O data/vectors.pickle.vectors.npy https://phrase-it.s3.amazonaws.com/vectors.pickle.vectors.npy && \
+    wget -O data/vectors.pickle https://phrase-it.s3.amazonaws.com/vectors.pickle
+
+EXPOSE 6007
 
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
