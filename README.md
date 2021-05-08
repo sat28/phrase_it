@@ -5,7 +5,7 @@ This dash application used word2vec library and phrases.csv provided inside data
 
 #### Important Links
 
-Hosted version - http://3.138.61.60:8050/
+Hosted version (not live now) 
 
 S3 location for vectors data -
 - https://phrase-it.s3.amazonaws.com/vectors.pickle
